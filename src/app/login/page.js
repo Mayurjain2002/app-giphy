@@ -1,9 +1,8 @@
 "use client"
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import React,{useState} from 'react'
-import { Navigate } from 'react-router-dom'
 import { auth } from '../Firebase'
-import { Link } from 'react-router-dom'
+
 const Page = () => {
     const [email,setEmail] = useState('')
     const [password,setpassword] = useState('')
@@ -33,6 +32,12 @@ const Page = () => {
     }
 
   return (
+    <div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="login">Login</a>
+        <a href="/signup">Signup</a>
+      </nav>
     
     <div className='loginp'>
         <div>
@@ -50,6 +55,7 @@ const Page = () => {
         <div className='load'> 
         <h2>Don't have an account?<button className='btn2' onClick={sign}>Signup</button></h2>
         </div>
+    </div>
     </div>
   )
 }

@@ -2,7 +2,7 @@
 body{
   /* display: inline-flex; */
  height: 50rem;
-  padding: 4.5rem 14.49975rem 37.875rem 14.5rem;
+  /* padding: 4.5rem 14.49975rem 37.875rem 14.5rem; */
   justify-content: center;
   align-items: center;
   background: var(--Page-background, #E8EAEE);

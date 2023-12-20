@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 import { auth,fireDB } from '../Firebase'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { addDoc, collection } from 'firebase/firestore'
-import { Link } from 'react-router-dom'
+
 
 const Signup = () => {
     const [email,setEmail] = useState('')
@@ -37,6 +37,12 @@ const Signup = () => {
     }
 
   return (
+    <div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="login">Login</a>
+        <a href="/signup">Signup</a>
+      </nav>
     
     <div className='loginp'>
         <div>
@@ -52,6 +58,7 @@ const Signup = () => {
             <button className='btn1' onClick={signup}>Signup</button>
         </div>
         <h2>Already Have an account? <button className='btn2' onClick={logi}>Login</button></h2>
+    </div>
     </div>
   )
 }
